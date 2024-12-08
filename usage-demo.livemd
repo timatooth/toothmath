@@ -1,0 +1,46 @@
+<!-- livebook:{"persist_outputs":true} -->
+
+# Toothmath Usage Demo
+
+```elixir
+Mix.install([
+  {:toothmath, "~> 0.1.0"}
+])
+```
+
+## Creating Fractions
+
+```elixir
+my_fraction = Toothmath.Fraction.new(16, 32)
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+%Toothmath.Fraction{a: 16, b: 32}
+```
+
+```elixir
+my_fraction = Toothmath.Fraction.simplify(my_fraction)
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+%Toothmath.Fraction{a: 1, b: 2}
+```
+
+## Approximating numbers into "natural" fractions
+
+Here we apply a [search tree method](https://en.wikipedia.org/wiki/Stern%E2%80%93Brocot_tree) to finding the closest human friendly fractions
+
+```elixir
+alias Toothmath.Fraction
+approximate_fraction = Fraction.from_value(0.6875)
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+%Toothmath.Fraction{a: 11, b: 16}
+```

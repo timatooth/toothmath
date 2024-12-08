@@ -44,7 +44,7 @@ defmodule Toothmath.MixProject do
   defp docs do
     [
       # The main page in the docs
-      main: "Fraction",
+      main: "Toothmath.Fraction",
       logo: "toothmath-logo.svg",
       extras: ["README.md"]
     ]
