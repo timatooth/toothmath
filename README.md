@@ -2,6 +2,8 @@
 
 **A simple fractional math operations library**
 
+![build](https://github.com/timatooth/toothmath/actions/workflows/elixir.yml/badge.svg)
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed

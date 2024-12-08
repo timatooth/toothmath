@@ -1,7 +1,9 @@
-defmodule Fraction do
+defmodule Toothmath.Fraction do
   @moduledoc """
   This is a hand spun math module to handle Fractions
   """
+
+  alias Toothmath.Fraction
 
   @doc """
   A fraction
@@ -29,6 +31,7 @@ defmodule Fraction do
   ## Examples
 
     ```
+    iex> alias Toothmath.Fraction
     iex> Fraction.value(%Fraction{a: 1, b: 2})
     0.50
     ```
@@ -45,6 +48,7 @@ defmodule Fraction do
   ## Examples
 
   ```
+  iex> alias Toothmath.Fraction
   iex> Fraction.add(%Fraction{a: 1, b: 2}, %Fraction{a: 1, b: 4})
   %Fraction{a: 3, b: 4}
   ```
@@ -62,6 +66,7 @@ defmodule Fraction do
   Simply a fraction using the greatest common divisor using the Euclidean algorithm
 
   ```
+  iex> alias Toothmath.Fraction
   iex> Fraction.simplify(%Fraction{a: 2, b: 4})
   %Fraction{a: 1, b: 2}
   ```
@@ -76,6 +81,7 @@ defmodule Fraction do
 
   ## Examples
 
+    iex> alias Toothmath.Fraction
     iex> Fraction.from_value(0.6875)
     %Fraction{a: 11, b: 16}
     

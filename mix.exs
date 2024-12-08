@@ -9,11 +9,21 @@ defmodule Toothmath.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
 
+      # Hex.pm specific fields
+      description: "A library to handle mathematical operations for Toothmath",
+      package: [
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/timatooth/toothmath"}
+      ],
+
       # Docs
       name: "Toothmath",
       source_url: "https://github.com/timatooth/toothmath",
       homepage_url: "https://github.com/timatooth/toothmath",
-      docs: &docs/0
+      docs: &docs/0,
+
+      # Additional configurations for Hex.pm publishing
+      preferred_cli_env: [publish: :prod]
     ]
   end
 
