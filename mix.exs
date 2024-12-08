@@ -10,7 +10,7 @@ defmodule Toothmath.MixProject do
       deps: deps(),
 
       # Hex.pm specific fields
-      description: "A library to handle mathematical operations for Toothmath",
+      description: "A library to handle primary school mathematics operations",
       package: [
         licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/timatooth/toothmath"}

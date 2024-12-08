@@ -2,7 +2,7 @@
 
 **A simple fractional math operations library**
 
-![build](https://github.com/timatooth/toothmath/actions/workflows/elixir.yml/badge.svg)
+[![Elixir CI](https://github.com/timatooth/toothmath/actions/workflows/elixir.yml/badge.svg?branch=main)](https://github.com/timatooth/toothmath/actions/workflows/elixir.yml)
 
 ## Installation
 
